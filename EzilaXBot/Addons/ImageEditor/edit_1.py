@@ -1,5 +1,5 @@
 # By @TroJanzHEX
-# dihanofficial
+# Sadew Jayasekara
 
 import os
 import shutil
