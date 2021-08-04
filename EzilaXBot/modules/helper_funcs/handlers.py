@@ -1,6 +1,6 @@
-import Sophia.modules.sql.blacklistusers_sql as sql
-from Sophia import ALLOW_EXCL
-from Sophia import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import EzilaXBot.modules.sql.blacklistusers_sql as sql
+from EzilaXBot import ALLOW_EXCL
+from EzilaXBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
