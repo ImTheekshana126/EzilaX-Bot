@@ -1,4 +1,4 @@
-from Sophia.mongo import client as db_x
+from EzilaXBot.mongo import client as db_x
 
 lydia = db_x["CAHTBOT"]
 
