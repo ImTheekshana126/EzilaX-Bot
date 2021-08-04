@@ -5,7 +5,7 @@ from sys import argv
 from typing import Optional
 from pyrogram import filters, idle
 
-from Sophia import (
+from EzilaXBot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -26,10 +26,10 @@ from Sophia import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Sophia.modules import ALL_MODULES
-from Sophia.modules.helper_funcs.chat_status import is_user_admin
-from Sophia.modules.helper_funcs.misc import paginate_modules
-from Sophia.modules.sudoers import bot_sys_stats
+from EzilaXBot.modules import ALL_MODULES
+from EzilaXBot.modules.helper_funcs.chat_status import is_user_admin
+from EzilaXBot.modules.helper_funcs.misc import paginate_modules
+from EzilaXBot.modules.sudoers import bot_sys_stats
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -76,15 +76,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 𝗦𝗼𝗽𝗵𝗶𝗮 
-𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg)
-Project By @DihanOfficial ❤
+𝐇𝐞𝐥𝐥𝐨, \n 𝗜'𝗺 EzilaX
+𝗜'𝗺 𝗛𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀! 𝗛𝗶𝘁 /help [️️ ️](https://telegra.ph/file/584b1539d736325fab377.jpg)
+Project By @Ezila_Updates ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add Sophia to your Group ➕", url="t.me/Sophia?startgroup=true"),
+            text="➕ Add Sophia to your Group ➕", url="t.me/EzilaXBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
@@ -93,9 +93,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/dihanofficial"),
+        InlineKeyboardButton(text="🙋‍♀️ Sophia News", url=f"https://t.me/Ezila_Updates"),
         InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/dihan_official"
+            text="💬 Support Group", url=f"https://t.me/Ezila_Support"
         ),
     ],
     [
@@ -105,14 +105,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` 𝗦𝗼𝗽𝗵𝗶𝗮 
+`Hi.. I'm` EzilaX 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @dihanofficial 💓 [️️ ️](https://telegra.ph/file/583b241199a6c0c0fa38c.jpg) """
+Powered by @Ezila_Updates 💓 [️️ ️](https://telegra.ph/file/584b1539d736325fab377.jpg) """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Dihan Randila](t.me/dihanrandila) \
- Supporting isnt always financial! [Dihan Official](t.me/dihanofficial) \
+ You can support the project Of [Sadew Jayasekara](t.me/Darkridersslk) \
+ Supporting isnt always financial! [SDBOTs](t.me/SDBOTs_inifinity) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -358,17 +358,17 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Sophia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *EzilaX*, a powerful group management bot built to help you manage your group easily.
                  \n* I can restrict users.
                  \n* I can greet users with customizable welcome messages and even set a group's rules.
                  \n* I have an advanced anti-flood system.
                  \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n* I check for admins' permissions before executing any command
-                 \n* Awesome Secret @DihanOfficial
-                 \n* Support Group @dihan_official
-                 \* Assistant @SophiaX_Support
-                 \n\nIf you have any question about Sophia, let us know at .""",
+                 \n* Awesome Secret @SDBOTs_inifinity
+                 \n* Support Group @SDBOTz
+                 \* Assistant @Ezila_Support
+                 \n\nIf you have any question about EzilaX, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -379,7 +379,7 @@ def sophia_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "sophia_back":
+    elif query.data == "EzilaXBot_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -399,8 +399,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😍 I'm *Sophia*
-                 \nHere is the [Source Code](https://github.com/dihanofficial/Sophia) .""",
+            text=""" Hi..😍 I'm *EzilaX*
+                 \nHere is the [Source Code](https://github.com/sadew451/EzilaX-SD) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -695,10 +695,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @dihanofficial")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @Ezila_Updates")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @dihan_official, go and check!"
+                "Bot isnt able to send message to @Ezila_Support, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
