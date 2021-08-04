@@ -1,4 +1,4 @@
-from Sophia import aiohttpsession
+from EzilaXBot import aiohttpsession
 
 headers = {
     "Accept": "application/json",
