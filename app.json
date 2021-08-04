@@ -1,16 +1,16 @@
   
 {
-      "name": "Sophia",
+      "name": "EzilaX",
       "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/821d3e03f45048f038a6e.jpg",
+      "logo": "https://telegra.ph/file/584b1539d736325fab377.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Sophia"
+         "EzilaX"
       ],   
-   "repository": "https://github.com/dihanofficial/sophia",
+   "repository": "https://github.com/Sadew451/EzilaX-SD",
    "addons": [
       {
          "options": {
@@ -68,12 +68,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Dihanrandila"
+         "value": "Darkridersslk"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "Dihan_Official"
+         "value": "SDBOTz"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -183,7 +183,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/dihanofficial"
+         "value": "https://t.me/SDBOTs_inifinity"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
