@@ -1,5 +1,5 @@
-from Sophia.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from Sophia import DRAGONS
+from EzilaXBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from EzilaXBot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
