@@ -1,4 +1,4 @@
 @echo off
-TITLE Sophia
+TITLE EzilaXBot
 :: Enables virtual env mode and then starts Rika
-env\scripts\activate.bat && py -m Sophia
+env\scripts\activate.bat && py -m EzilaXBot
