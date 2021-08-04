@@ -63,12 +63,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Sophia
-RUN git clone -b shiken https://github.com/dihanrandila1/Sophia /root/Sophia
+# Copy Python Requirements to /root/EzilaX-SD
+RUN git clone -b shiken https://github.com/sadew451/EzilaX-SD /root/EzilaX-SD
 WORKDIR /root/Sophia
 
-#Copy config file to /root/Sophia/Sophia
-COPY ./Sophia/sample_config.py ./Sophia/config.py* /root/Sophia/Sophia/
+#Copy config file to /root/EzilaXBot/EzilaXBot
+COPY ./EzilaXBot/sample_config.py ./EzilaXBot/config.py* /root/EzilaXBot/EzilaXBot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -76,4 +76,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Sophia"]
+CMD ["python3","-m","EzilaXBot"]
