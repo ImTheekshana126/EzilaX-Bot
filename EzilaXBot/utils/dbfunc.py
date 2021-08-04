@@ -1,4 +1,4 @@
-from Sophia.mongo import db
+from EzilaXBot.mongo import db
 from typing import Dict, List, Union
 
 
