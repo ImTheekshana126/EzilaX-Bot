@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/Sophia/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/EzilaXBot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -14,17 +14,17 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
+    API_ID = 4652853  # integer value, dont use ""
     API_HASH = "awoo"
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Dihanrandila" 
-    SUPPORT_CHAT = "Dihan_Official"  # Your own group for support, do not add the @
+    OWNER_ID = 1548967589  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Darkridersslk" 
+    SUPPORT_CHAT = "SDBOTz"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001392103597
+        -1001130413114
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001392103597
+        -1001130413114
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
