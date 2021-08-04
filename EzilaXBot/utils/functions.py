@@ -14,9 +14,9 @@ from re import findall
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from wget import download
 
-from Sophia import aiohttpsession as aiosession
-from Sophia.utils import aiodownloader
-from Sophia.utils.fetch import fetch
+from EzilaXBot import aiohttpsession as aiosession
+from EzilaXBot.utils import aiodownloader
+from EzilaXBot.utils.fetch import fetch
 
 """
 Just import 'downloader' anywhere and do downloader.download() to
