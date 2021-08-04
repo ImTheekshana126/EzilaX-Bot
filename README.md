@@ -14,7 +14,7 @@
 
 # 2 Branches available. this is main brach. swith advaced fr all fetures
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sadew451/EzilaX-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sadew451/EzilaX-SD)
 
 
 ## New version Avaiilable on Telegram as [SDBOTs In͏i͏f͏i͏n͏i͏t͏y͏](https://t.me/SDBOTs_inifinity)
