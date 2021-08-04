@@ -118,5 +118,5 @@ The Advanced Branch (For PRO's)
 > And credits goes to all who supported, all who helped and API & environmental equirement package devs and all projects helped in making this project.
 > Special thanks to you for using bot
 
-### COPYRIGHT 2020-2021 SOPHIA v2
+### COPYRIGHT 2020-2021 EzilaXBot v2
 
