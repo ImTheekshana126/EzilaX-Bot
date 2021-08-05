@@ -126,7 +126,7 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Sophia's AI based Chatbot feature allows Daisy to talk and provides a more interactive group chat experience.
+EzilaXBot's AI based Chatbot feature allows Daisy to talk and provides a more interactive group chat experience.
 When the AI Enabled Daisy will start chatting when you repliying her Messages!!
 *Please Note that AI Support only for English Language*
 *Commands:* 
