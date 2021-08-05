@@ -402,6 +402,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from Sophia.modules import connection
+from EzilaXBot.modules import connection
 
 connected = connection.connected
