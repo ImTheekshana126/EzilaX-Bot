@@ -104,7 +104,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Sophia.config import Development as Config
+    from EzilaXBot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -193,8 +193,8 @@ else:
 
 aiohttpsession = ClientSession()
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Sophia", API_ID, API_HASH)
-pbot = Client("Sophiapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("EzilaXBot", API_ID, API_HASH)
+pbot = Client("EzilaXbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
