@@ -23,7 +23,7 @@ from EzilaXBot import BOT_USERNAME, OWNER_ID
 from EzilaXBot.config import get_str_key
 from EzilaXBot.function.pluginhelpers import convert_seconds_to_minutes as time_convert
 from EzilaXBot.function.pluginhelpers import fetch
-from EzilaXBot.Best_Of_Sophia.pyrogram import pbot
+from EzilaXBot.Best_Of_EzilaXBot.pyrogram import pbot
 
 ARQ_API = get_str_key("ARQ_API", required=True)
 ARQ_API_KEY = ARQ_API
