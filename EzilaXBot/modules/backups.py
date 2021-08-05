@@ -342,7 +342,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("Sophia{}.backup".format(chat_id), "rb"),
+        document=open("EzilaXBot{}.backup".format(chat_id), "rb"),
         caption="💾*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `EzilaXBot-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
@@ -376,7 +376,7 @@ __help__ = """
  Note that files / photos cannot be imported due to telegram restrictions.
  - /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
 
-@DihanOfficial
+@Sadew451
 """
 
 IMPORT_HANDLER = CommandHandler("import", import_data)
