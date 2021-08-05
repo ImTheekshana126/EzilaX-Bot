@@ -5,7 +5,7 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Sophia.modules.sql.notes_sql as sql
+import EzilaXBot.modules.sql.notes_sql as sql
 from EzilaXBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
 from EzilaXBot.__main__ import DATA_IMPORT
 from EzilaXBot.modules.helper_funcs.chat_status import user_admin
