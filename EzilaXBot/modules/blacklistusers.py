@@ -28,7 +28,7 @@ from EzilaXBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Sophia.modules.log_channel import gloggable
+from EzilaXBot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
