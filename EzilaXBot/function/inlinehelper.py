@@ -88,7 +88,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Sophia✨](https://github.com/sadew451):**
+**[EzilaXBot✨](https://github.com/sadew451):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
