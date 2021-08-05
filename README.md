@@ -77,9 +77,9 @@ The Advanced Branch (For PRO's)
     [-] DATABASE_URL: from elephantsql.com
     [-] OWNER_ID: ur id
     [-] MONGO_PORT: 27017
-    [-] MONGO_DB': 'Sophia'
+    [-] MONGO_DB': 'EzilaX'
  
-[+] The Sophia won't run without setting the mandatory vars.
+[+] The EzilaX won't run without setting the mandatory vars.
 ```
 
 # 😍 Credits
