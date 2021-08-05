@@ -21,13 +21,13 @@ from EzilaXBot.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from Sophia.helper_extra.admin_rights import (
+from EzilaXBot.helper_extra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from Sophia.modules.helper_funcs.extraction import (
+from EzilaXBot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
