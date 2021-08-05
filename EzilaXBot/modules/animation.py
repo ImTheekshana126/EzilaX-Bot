@@ -382,7 +382,7 @@ __help__ = """
 -  /blockanimation*:*
 -  /kill*:*
 
- By @SophiaSLBot
+ By @EzilaXBot
 """
 
 
